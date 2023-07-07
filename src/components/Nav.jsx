@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Nav() {
   return (
@@ -7,9 +8,9 @@ function Nav() {
         <div>
           <img src="./images/logo.png" alt="mmra logo" className="w-[4rem]" />
         </div>
-        <div className="text-2xl font-bold flex justify-center items-center text-white">
+        <Link to={'/'} className="text-2xl font-bold flex justify-center items-center text-white">
           MMRA
-        </div>
+        </Link>
       </div>
       <div className="flex items-center">
         <div className="flex gap-2">

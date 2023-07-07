@@ -9,7 +9,7 @@ function HomePage() {
       </div>
       <div className="w-full mt-4 rounded-2xl " id="loginSection">
         <div className="bg-white rounded-full font-serif  ml-[-6rem] text-xl font-bold text-primary p-2 pl-4">
-          Signin
+          Sign In
         </div>
         <div className="w-full  flex justify-center h-[20vh] ">
           <img src="./images/logo.png" className="w-[10rem] " />

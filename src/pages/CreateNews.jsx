@@ -3,8 +3,8 @@ import React from "react";
 
 function CreateNews() {
   const [title, setTitle] = useState("");
-  const [author, setAuthor] = useState("");
-  const [publicationDate, setPublicationDate] = useState("");
+  const [subTitle, setSubTitle] = useState("");
+
   const [excerpt, setExcerpt] = useState("");
 
   const [selectedImage, setSelectedImage] = useState(null);
@@ -45,35 +45,23 @@ function CreateNews() {
               onChange={(e) => setTitle(e.target.value)}
             />
           </div>
+
           <div className="mb-4">
             <label
               className="block text-gray-700 text-sm font-bold mb-2"
-              htmlFor="author">
-              Author
+              htmlFor="title">
+              Sub Title
             </label>
             <input
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              id="author"
+              id="title"
               type="text"
-              placeholder="Enter the author"
-              value={author}
-              onChange={(e) => setAuthor(e.target.value)}
+              placeholder="Enter the subtitle"
+              value={subTitle}
+              onChange={(e) => setSubTitle(e.target.value)}
             />
           </div>
-          <div className="mb-4">
-            <label
-              className="block text-gray-700 text-sm font-bold mb-2"
-              htmlFor="publicationDate">
-              Publication Date
-            </label>
-            <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              id="publicationDate"
-              type="date"
-              value={publicationDate}
-              onChange={(e) => setPublicationDate(e.target.value)}
-            />
-          </div>
+
           <div className="mb-4">
             <label
               className="block text-gray-700 text-sm font-bold mb-2"
@@ -84,7 +72,7 @@ function CreateNews() {
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               id="excerpt"
               placeholder="Enter the excerpt"
-              rows="4"
+              rows="10"
               value={excerpt}
               onChange={(e) => setExcerpt(e.target.value)}></textarea>
           </div>
