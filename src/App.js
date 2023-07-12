@@ -4,6 +4,7 @@ import Nav from "./components/Nav";
 import { Route, Routes } from "react-router-dom";
 import MainPage from "./pages/MainPage";
 import CreateNews from "./pages/CreateNews";
+import EditNews from "./pages/EditNews";
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
         <Route index element={<HomePage />} />
         <Route path="/mainpage" element={<MainPage />} />
         <Route path="/createNews" element={<CreateNews />} />
+        <Route path="/edit" element={<EditNews />} />
+
         <Route path="/" element={<HomePage />} />
       </Routes>
     </div>
